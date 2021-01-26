@@ -9,11 +9,40 @@
 </head>
 <body>
     <style>
-header {
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+header > .wrapper {
     background-color: rgb(68, 134, 233);
+}
+h1 {
+  font-size: 24px;
+  color: #ffffff;
+}
+.select {
+  width: 100px;
+  height: 30px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+
+  }
+.input {
+  width: 100px;
+  height: 25px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+
 }
 .currency {
     border: 1px solid #555555;
+    display: flex;
+}
+.about {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
     </style>
     <div class="root"></div>

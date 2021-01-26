@@ -14,24 +14,9 @@ export default class extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   setInterval(() => {
-  //     this.setState({ count: this?.state?.count + 1 });
-  //   }, 3000);
-  // }
-
-  handleChangeTemperature(e) {
-    this.setState({ temperatureValue: e.target.value });
-  }
-
   render() {
     const element = document.createDocumentFragment();
-    const header = new Header({
-      temperatureController: {
-        temperatureValue: this?.state?.temperatureValue || 'Celsius',
-        handleChangeTemperature: this.handleChangeTemperature.bind(this),
-      },
-    });
+    const header = new Header();
     const main = new Main();
     const footer = new Footer();
     const layout = new Layout({ header, main, footer });
